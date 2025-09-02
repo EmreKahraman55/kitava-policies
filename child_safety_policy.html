@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitava - Çocuk Güvenliği Politikası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #E67E22;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #E67E22;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #E67E22;
+        }
+        
+        .section h2 {
+            color: #E67E22;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .section h3 {
+            color: #555;
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .section p, .section li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .contact-info {
+            background: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #E67E22;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Kitava</h1>
+            <p>Çocuk Güvenliği Politikası</p>
+            <div style="margin-top: 15px;">
+                <span class="badge">Güvenli</span>
+                <span class="badge">13+ Yaş</span>
+                <span class="badge">Moderasyon</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Genel Bakış</h2>
+            <p>Kitava, kullanıcıların günlük yazılarını paylaştığı ve toplulukla etkileşimde bulunduğu bir sosyal platformdur. Çocukların güvenliği bizim için en önemli önceliktir.</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Yaş Sınırı ve Hedef Kitle</h2>
+            <ul>
+                <li><strong>Minimum Yaş:</strong> 13 yaş ve üzeri</li>
+                <li><strong>Hedef Kitle:</strong> Yetişkin kullanıcılar ve genç yetişkinler</li>
+                <li><strong>Kullanım Amacı:</strong> Günlük yazma, duygu paylaşımı ve topluluk etkileşimi</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🛡️ Çocuk Güvenliği Önlemleri</h2>
+            
+            <h3>İçerik Moderasyonu</h3>
+            <ul>
+                <li><strong>Otomatik Filtreleme:</strong> Uygunsuz içerik otomatik olarak tespit edilir ve engellenir</li>
+                <li><strong>Manuel İnceleme:</strong> Şüpheli içerikler uzman moderatörler tarafından incelenir</li>
+                <li><strong>Kullanıcı Raporlama:</strong> Kullanıcılar uygunsuz içeriği anında raporlayabilir</li>
+                <li><strong>24/7 İzleme:</strong> Platform sürekli olarak izlenir ve denetlenir</li>
+            </ul>
+
+            <h3>Güvenlik Özellikleri</h3>
+            <ul>
+                <li><strong>Anonim Kullanım:</strong> Kullanıcılar kişisel bilgilerini paylaşmak zorunda değildir</li>
+                <li><strong>İçerik Kilitleme:</strong> Yazılar kilitli olarak paylaşılabilir</li>
+                <li><strong>Güvenli Giriş:</strong> Firebase Authentication ile güvenli kimlik doğrulama</li>
+                <li><strong>Veri Şifreleme:</strong> Tüm veriler şifrelenerek saklanır</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🚫 Yasaklanan İçerikler</h2>
+            <ul>
+                <li>Çocuklarla ilgili uygunsuz içerik</li>
+                <li>Şiddet, nefret söylemi ve taciz</li>
+                <li>Pornografik veya müstehcen materyal</li>
+                <li>Yasadışı aktiviteler</li>
+                <li>Kişisel bilgilerin paylaşımı</li>
+                <li>Spam ve reklam içeriği</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📱 Uygulama İçi Güvenlik</h2>
+            <ul>
+                <li><strong>Raporlama Sistemi:</strong> Her post'ta raporlama butonu bulunur</li>
+                <li><strong>Hızlı Müdahale:</strong> Raporlanan içerik 24 saat içinde incelenir</li>
+                <li><strong>Kullanıcı Engelleme:</strong> Taciz eden kullanıcılar engellenebilir</li>
+                <li><strong>İçerik Filtreleme:</strong> Zararlı içerik otomatik olarak gizlenir</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔍 İçerik Denetimi Süreci</h2>
+            <ol>
+                <li><strong>Otomatik Tespit:</strong> AI destekli sistem uygunsuz içeriği tespit eder</li>
+                <li><strong>Manuel İnceleme:</strong> Şüpheli içerik moderatörler tarafından incelenir</li>
+                <li><strong>Hızlı Karar:</strong> Uygunsuz içerik anında kaldırılır</li>
+                <li><strong>Kullanıcı Uyarısı:</strong> Politika ihlali yapan kullanıcılar uyarılır</li>
+                <li><strong>Hesap Askıya Alma:</strong> Tekrarlanan ihlaller hesap askıya alınmasına neden olur</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>📚 Eğitim ve Farkındalık</h2>
+            <ul>
+                <li><strong>Kullanıcı Rehberi:</strong> Güvenli kullanım için detaylı rehber</li>
+                <li><strong>Topluluk Kuralları:</strong> Net ve anlaşılır kullanım kuralları</li>
+                <li><strong>Güvenlik İpuçları:</strong> Düzenli güvenlik güncellemeleri</li>
+                <li><strong>Destek Sistemi:</strong> Güvenlik endişeleri için 7/24 destek</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <h3>⚠️ Önemli Hatırlatma</h3>
+            <p>Kitava, çocukların güvenliği için sıfır tolerans politikası uygular. Çocuklarla ilgili herhangi bir uygunsuz içerik tespit edildiğinde:</p>
+            <ul>
+                <li>İçerik anında kaldırılır</li>
+                <li>Kullanıcı hesabı kalıcı olarak kapatılır</li>
+                <li>Gerekli durumlarda yetkililere bildirim yapılır</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🌍 Yasal Uyumluluk</h2>
+            <ul>
+                <li><strong>GDPR Uyumluluğu:</strong> Avrupa veri koruma düzenlemelerine tam uyum</li>
+                <li><strong>COPPA Uyumluluğu:</strong> Çocuk Online Gizlilik Koruması Yasası'na uyum</li>
+                <li><strong>Yerel Yasalara Uyum:</strong> Tüm ülkelerdeki çocuk koruma yasalarına uyum</li>
+                <li><strong>Yetkili İşbirliği:</strong> Gerekli durumlarda yetkililerle tam işbirliği</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3>📞 Güvenlik Endişeleri İçin İletişim</h3>
+            <p><strong>E-posta:</strong> emrekahraman556611@gmail.com</p>
+            <p><strong>Yanıt Süresi:</strong> 24 saat içinde</p>
+            <p><strong>Gizlilik:</strong> Tüm bildirimler gizli tutulur</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Son Güncelleme:</strong> 2 Eylül 2024</p>
+            <p><strong>Versiyon:</strong> 1.0</p>
+            <p>Bu politika düzenli olarak güncellenir ve iyileştirilir.</p>
+        </div>
+    </div>
+</body>
+</html> 

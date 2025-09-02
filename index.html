@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Günlük App - Yasal Belgeler</title>
+    <title>Kitava - Günlük Yazma Uygulaması</title>
     <style>
         * {
             margin: 0;
@@ -12,87 +12,169 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
             background: white;
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
             text-align: center;
-            max-width: 600px;
-            margin: 2rem;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid #f0f0f0;
         }
         
         .logo {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #6366F1;
             margin-bottom: 1rem;
-            color: #E67E22;
         }
         
-        h1 {
-            color: #333;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-        
-        p {
+        .tagline {
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 2rem;
-            font-size: 1.1rem;
         }
         
         .links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
         
-        .link {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #E67E22, #D35400);
-            color: white;
+        .link-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
         
-        .link:hover {
+        .link-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(230, 126, 34, 0.3);
+            border-color: #6366F1;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #6366F1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .link-desc {
+            color: #666;
+            font-size: 0.9rem;
         }
         
         .footer {
-            margin-top: 2rem;
-            color: #999;
-            font-size: 0.9rem;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+        }
+        
+        .app-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .app-info h3 {
+            color: #6366F1;
+            margin-bottom: 1rem;
+        }
+        
+        .app-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .app-info li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .app-info li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .links {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">📝</div>
-        <h1>Günlük App</h1>
-        <p>Anonim günlük yazma uygulaması için yasal belgeler</p>
+        <div class="header">
+            <div class="logo">📖 Kitava</div>
+            <div class="tagline">Günlük Yazma Uygulaması</div>
+            <p>Duygularınızı güvenle paylaşın, günlük yazın ve toplulukla etkileşimde bulunun.</p>
+        </div>
+        
+        <div class="app-info">
+            <h3>📱 Uygulama Özellikleri</h3>
+            <ul>
+                <li>🔒 <strong>Anonim Yazma:</strong> Kimliğinizi gizli tutarak güvenle yazın</li>
+                <li>📝 <strong>Günlük Tutma:</strong> Günlük duygularınızı ve düşüncelerinizi kaydedin</li>
+                <li>🌍 <strong>Topluluk:</strong> Benzer düşünceleri olan kişilerle etkileşim kurun</li>
+                <li>🎨 <strong>Duygu Takibi:</strong> Günlük ruh halinizi takip edin</li>
+                <li>⚙️ <strong>Kişiselleştirme:</strong> Uygulamanızı ihtiyaçlarınıza göre özelleştirin</li>
+            </ul>
+        </div>
         
         <div class="links">
-            <a href="privacy_policy.html" class="link">🔒 Gizlilik Politikası</a>
-            <a href="terms_of_service.html" class="link">📋 Kullanım Şartları</a>
-            <a href="data_deletion_policy.html" class="link">🗑️ Veri Silme Politikası</a>
+            <a href="privacy_policy.html" class="link-card">
+                <div class="link-title">🔒 Gizlilik Politikası</div>
+                <div class="link-desc">Kişisel verilerinizin nasıl toplandığı ve kullanıldığı hakkında detaylı bilgi.</div>
+            </a>
+            
+            <a href="terms_of_service.html" class="link-card">
+                <div class="link-title">📋 Kullanım Şartları</div>
+                <div class="link-desc">Uygulamayı kullanırken uymanız gereken kurallar ve şartlar.</div>
+            </a>
+            
+            <a href="data_deletion_policy.html" class="link-card">
+                <div class="link-title">🗑️ Veri Silme Politikası</div>
+                <div class="link-desc">Hesabınızı ve verilerinizi nasıl silebileceğiniz hakkında bilgi.</div>
+            </a>
+            
+            <a href="child_safety_policy.html" class="link-card">
+                <div class="link-title">🛡️ Çocuk Güvenliği Politikası</div>
+                <div class="link-desc">Çocukların güvenliği için aldığımız önlemler ve politikalarımız.</div>
+            </a>
         </div>
         
         <div class="footer">
-            <p>Bu belgeler Play Store gereksinimleri için hazırlanmıştır.</p>
+            <p>&copy; 2024 Kitava. Tüm hakları saklıdır.</p>
+            <p>İletişim: support@kitava.app</p>
         </div>
     </div>
 </body>
